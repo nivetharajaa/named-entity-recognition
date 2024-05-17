@@ -91,8 +91,8 @@ word2idx = {w: i + 1 for i, w in enumerate(words)}
 tag2idx = {t: i for i, t in enumerate(tags)}
 word2idx
 tag2idx
-print("POOJA A")
-print("212222240072")
+print("NIVETHA A")
+print("212222230101")
 plt.hist([len(s) for s in sentences], bins=50)
 plt.show()
 X1 = [[word2idx[w[0]] for w in s] for s in sentences]
@@ -134,8 +134,8 @@ history = model.fit(
 )
 metrics = pd.DataFrame(model.history.history)
 metrics.head()
-print("vidhyasri.k")
-print("212222230170")
+print("NIVETHA A")
+print("212222230101")
 metrics[['accuracy','val_accuracy']].plot()
 metrics[['loss','val_loss']].plot()
 i = 20
@@ -150,16 +150,15 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 
 ## OUTPUT
 
-![328088951-822b537a-c1fb-41ff-93b1-123a46cd0216](https://github.com/nivetharajaa/named-entity-recognition/assets/120543388/454bced3-9403-4851-afeb-c1f9cdb78097)
+### Training Loss, Validation Loss Vs Iteration Plot
+![Screenshot 2024-05-06 111328](https://github.com/vidhyasrikachapalayam/named-entity-recognition/assets/119477817/822b537a-c1fb-41ff-93b1-123a46cd0216)
 
-![328089616-bbaf640b-085f-473b-ae52-57802e9a64d9](https://github.com/nivetharajaa/named-entity-recognition/assets/120543388/5e2caa61-1833-43c6-9a84-5c5b0b3985d2)
-
-
+![Screenshot 2024-05-06 111356](https://github.com/vidhyasrikachapalayam/named-entity-recognition/assets/119477817/bbaf640b-085f-473b-ae52-57802e9a64d9)
 
 
 
 ### Sample Text Prediction
-![328088877-d2996fc0-45c4-45d0-98e6-593721a714a0](https://github.com/nivetharajaa/named-entity-recognition/assets/120543388/332a3979-2b23-4d51-8c10-e37b98782f8d)
+![image](https://github.com/vidhyasrikachapalayam/named-entity-recognition/assets/119477817/d2996fc0-45c4-45d0-98e6-593721a714a0)
 
 
 ## RESULT:
